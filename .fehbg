@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '/home/kapcioszek/.local/share/wallpapers/road.jpeg' 

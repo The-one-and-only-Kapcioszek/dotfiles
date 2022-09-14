@@ -1,0 +1,205 @@
+############################################
+#	       POLYBAR CONFIG 		   #
+############################################
+[settings]
+screenchange-reload = true
+pseudo-transparency = false
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+[bar/base]
+enable-ipc=true
+height = 36
+width = 100%
+offset-x = 0
+offset-y = 0
+padding = 0
+module-margin = 0
+background = #50000000
+foreground = #a4f2b5
+bottom = false
+border-color = #000000
+border-size = 0
+line-size = 0
+line-color = #000000
+wm-restack = bspwm
+override-redirect = false
+tray-position = right
+
+font-0=fontello:size=15:scale=10;3
+font-2=Material Design Icons Desktop:size=15;3
+font-1=Nimbus Mono PS:size=14;4
+
+modules-left = menu cpu memory title
+modules-center =  bspwm
+modules-right =  mpd mpdd pulseaudio backlight battery nm-launcher date
+
+############################################
+#  	        MODULES LEFT               #
+############################################
+
+[module/menu]
+type = custom/text
+content =""
+content-padding = 2
+click-left = rofi -show drun
+content-foreground = #a4f2b5
+
+[module/title]
+type = internal/xwindow
+format = <label>
+format-background = #50000000
+format-foreground = #a4f2b5
+format-padding = 4
+label = %title%
+label-maxlen = 50
+
+[module/cpu]
+type = internal/cpu
+interval = 2.5
+format =  <label>
+format-prefix = "󰍛 "
+format-prefix-foreground = #a4f2b5
+format-padding = 1
+format-background = #50000000
+format-foreground = #a4f2b5
+label =  %percentage%%
+click-left = kitty --class btm -e btm
+
+[module/memory]
+type = internal/memory
+format = <label>
+format-prefix = " "
+format-prefix-foreground = #a4f2b5
+format-prefix-background = #50000000
+label = %percentage_used%%
+label-background = #ffffff]
+
+############################################
+#  	      MODULES CENTER               #
+############################################
+
+[module/bspwm]
+type = internal/bspwm
+format = <label-state>
+format-margin = 0
+index-sort = true
+
+enable-click = true
+reverse-scroll = false
+enable-scroll = true
+
+label-focused = ""
+label-focused-overline = #000000
+label-focused-foreground = #a4f2b5
+label-focused-padding = 1
+
+label-empty = ""
+label-empty-padding = 1
+label-empty-foreground = #000000
+
+label-occupied = ""
+label-occupied-foreground = #82bf8f
+label-occupied-padding = 1
+
+############################################
+#  	       MODULES RIGHT               #
+############################################
+
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6600
+format-online = <label-song>
+label-song = "%artist% "
+format-online-foreground = #000000
+
+[module/mpdd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6600
+format-online = <label-song>
+label-song = "%title%"
+format-online-foreground = #000000
+
+[module/backlight]
+type = internal/backlight
+card = intel_backlight
+use-actual-brightness = true
+enable-scroll = true
+format = <label>
+label = " %percentage%% "
+
+[module/nm-launcher]
+type = custom/text
+content = "  "
+click-left = nm-connection-editor
+
+[module/pulseaudio]
+type = internal/pulseaudio
+sink = alsa_output.pci-0000_12_00.3.analog-stereo
+use-ui-max = true
+format-volume = <ramp-volume> <label-volume>
+label-volume = "%percentage%% "
+label-muted = 
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+click-right = pavucontrol
+
+[module/battery]
+type = internal/battery
+full-at = 100
+low-at = 20
+battery = BAT1
+adapter = ACAD
+poll-interval = 5
+format-charging = <label-charging>
+format-discharging = <label-discharging>
+label-charging = "  %percentage_raw%% "
+label-discharging = "  %percentage_raw%% "
+label-full = "  %percentage_raw%%"
+
+
+
+[module/date]
+type = internal/date
+interval = 60
+format = <label>
+format-prefix = ""
+format-prefix-foreground = ${colors.color7}
+format-padding = 1
+date = %H:%M%{F-}
+time-alt = %a, %b %d%{F-}
+label = %date%%time%
+
+############################################
+#  	       MISCELLANEOUS               #
+############################################
+
+[module/empty-space]
+type = custom/text
+content = "  "
+
+[module/round-left]
+type = custom/text
+content = %{T3}%{T-}
+content-foreground = ${colors.background}
+
+[module/round-right]
+type = custom/text
+content = %{T3}%{T-}
+content-foreground = ${colors.background}
+
+[module/roundd-left]
+type = custom/text
+content = %{T3}%{T-}
+content-foreground = ${colors.background}
+
+[module/roundd-right]
+type = custom/text
+content = %{T3}%{T-}
+content-foreground = ${colors.background}
+
