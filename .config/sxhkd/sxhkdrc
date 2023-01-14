@@ -4,10 +4,10 @@
 
 # Brightness
 super + Up
-    echo 1500 | sudo tee /sys/class/backlight/intel_backlight/brightness
+    echo 1500 | tee /sys/class/backlight/intel_backlight/brightness
 
 super + Down
-    echo 650 | sudo tee /sys/class/backlight/intel_backlight/brightness
+    echo 650 | tee /sys/class/backlight/intel_backlight/brightness
 
 # KILL FOCUSED WINDOW
 super + c
