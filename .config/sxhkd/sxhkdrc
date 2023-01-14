@@ -3,11 +3,11 @@
 # ##############################################################################
 
 # Brightness
-super + up
-    sudo brightnessctl -d "intel_backlight" set 100%
+super + Up
+    echo 1500 | sudo tee /sys/class/backlight/intel_backlight/brightness
 
-super + down
-    sudo brightnessctl -d "intel_backlight" set 50%
+super + Down
+    echo 650 | sudo tee /sys/class/backlight/intel_backlight/brightness
 
 # KILL FOCUSED WINDOW
 super + c
