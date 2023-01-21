@@ -13,3 +13,5 @@ cd dotfiles
 cp -r .config $HOME
 cp -r .local $HOME
 cp .fehbg $HOME
+sudo chmod +x $HOME/.config/bspwm/bspwmrc
+sudo chmod +x $HOME/.config/polybar/launch.sh
