@@ -3,10 +3,10 @@
 # ##############################################################################
 
 # Brightness
-super + Up
+super + Right
     echo 1500 | tee /sys/class/backlight/intel_backlight/brightness
 
-super + Down
+super + Left
     echo 650 | tee /sys/class/backlight/intel_backlight/brightness
 
 # KILL FOCUSED WINDOW
