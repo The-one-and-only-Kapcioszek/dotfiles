@@ -6,7 +6,7 @@ sudo pacman -S libev uthash libconfig pcre libx11 libxext libxcb pixman dbus
 cd picom
 meson --buildtype=release . build
 ninja -C build
-ninja -C build install
+sudo ninja -C build install
 cd ..
 cd dotfiles
 cp -r .config $HOME
