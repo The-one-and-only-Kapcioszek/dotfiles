@@ -13,9 +13,10 @@ cd dotfiles
 cp -r .config $HOME
 cp -r .local $HOME
 cp .fehbg $HOME
+declare -i x = 2
 echo "Choose theme (1 = road, 2 = adventure time) > "
 read theme
-if [$theme -eq 2]
+if [$theme -eq $x]
 then
     cp at-theme/config $HOME/.config/polybar
     cp at-theme/kitty.conf $HOME/.config/kitty
