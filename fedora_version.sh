@@ -19,6 +19,7 @@ if [theme -eq 2]
 then
     cp at-theme/config $HOME/.config/polybar
     cp at-theme/kitty.conf $HOME/.config/kitty
+    cp at-theme/bspwmrc $HOME/.config/bspwm
 fi 
 sudo chmod +x $HOME/.config/bspwm/bspwmrc
 sudo chmod +x $HOME/.config/polybar/launch.sh
