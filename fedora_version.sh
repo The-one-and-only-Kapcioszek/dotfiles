@@ -13,5 +13,12 @@ cd dotfiles
 cp -r .config $HOME
 cp -r .local $HOME
 cp .fehbg $HOME
+echo "Choose theme (1 = road, 2 = adventure time) > "
+read theme
+if [theme -eq 2]
+then
+    cp at-theme/config $HOME/.config/polybar
+    cp at-theme/kitty.conf $HOME/.config/kitty
+fi 
 sudo chmod +x $HOME/.config/bspwm/bspwmrc
 sudo chmod +x $HOME/.config/polybar/launch.sh
