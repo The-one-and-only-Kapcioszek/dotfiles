@@ -25,9 +25,9 @@
 <p><b>Some screenshots of this configuration:</b></p>
 <br>
 <p>Adventure Time color scheme</p>
-<img src="https://github.com/theKapcioszek/dotfiles/screenshots/at-theme1.png">
-<img src="https://github.com/theKapcioszek/dotfiles/screenshots/at-theme2.png">
+<img src="https://github.com/theKapcioszek/dotfiles/blob/master/screenshots/at-theme1.png">
+<img src="https://github.com/theKapcioszek/dotfiles/blob/master/screenshots/at-theme2.png">
 <br>
 <p>Green color scheme</p>
-<img src="https://github.com/theKapcioszek/dotfiles/screenshots/green1.png">
-<img src="https://github.com/theKapcioszek/dotfiles/screenshots/green2.png">
+<img src="https://github.com/theKapcioszek/dotfiles/blob/master/screenshots/green1.png">
+<img src="https://github.com/theKapcioszek/dotfiles/blob/master/screenshots/green2.png">
