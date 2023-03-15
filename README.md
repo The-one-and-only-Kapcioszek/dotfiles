@@ -1,7 +1,7 @@
 # dotfiles
 
 
-My personal dotfiles
+<p>My personal dotfiles</p>
 <br>
 
 <b>wm</b>: bspwm
@@ -12,3 +12,6 @@ My personal dotfiles
 <br>
 <b>terminal</b>: kitty
 
+<p>I made this repo mostly for myself but if you want to use these dotfiles then feel free to do so.</p>
+<br>
+<p>However i do <b>not<b> take responsibility if something does not work for you, so please don't open any issues.</p>
