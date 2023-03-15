@@ -14,4 +14,4 @@
 
 <p>I made this repo mostly for myself but if you want to use these dotfiles then feel free to do so.</p>
 <br>
-<p>However i do <b>not<b> take responsibility if something does not work for you, so please don't open any issues.</p>
+<p>However i do <b>not</b> take responsibility if something does not work for you, so please don't open any issues.</p>
