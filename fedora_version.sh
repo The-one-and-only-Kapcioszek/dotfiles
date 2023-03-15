@@ -13,7 +13,7 @@ cd dotfiles
 cp -r .config $HOME
 cp -r .local $HOME
 cp .fehbg $HOME
-echo "Choose theme (1 = road, 2 = adventure time) > "
+echo "Choose theme (1 = green color scheme, 2 = adventure time color scheme) > "
 read theme
 if (($theme==2))
 then
