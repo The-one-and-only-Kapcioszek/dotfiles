@@ -1,7 +1,7 @@
-# dotfiles
+# dotfiles-bspwm
 
 
-<p>My personal dotfiles</p>
+<p>My personal dotfiles for bspwm</p>
 <br>
 
 <b>wm</b>: bspwm
